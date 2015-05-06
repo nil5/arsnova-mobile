@@ -70,6 +70,7 @@ Ext.define('ARSnova.view.speaker.RoundManagementEditButtons', {
 			buttonConfig: 'togglefield',
 			cls: this.config.buttonClass,
 			text: Messages.SWITCH_VOTING_MODE,
+			hidden: true,
 			toggleConfig: {
 				scope: this,
 				label: false,
