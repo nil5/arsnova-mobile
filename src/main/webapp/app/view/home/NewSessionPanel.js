@@ -163,11 +163,13 @@ Ext.define('ARSnova.view.home.NewSessionPanel', {
 
 	enableInputElements: function () {
 		this.submitButton.enable();
+		this.submitButton.removeCls("loading");
 		this.mycourses.addListener('itemtap', this.onCourseSubmit);
 	},
 
 	disableInputElements: function () {
 		this.submitButton.disable();
+		this.submitButton.addCls("loading");
 		this.mycourses.removeListener('itemtap', this.onCourseSubmit);
 	},
 
